@@ -1,0 +1,504 @@
+
+/* nav bar start */
+*{
+    padding: 0px;
+   transition: all 0.2s linear;
+  } 
+  body{
+      margin: 0px;
+      font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+      text-align: left;
+      margin: auto;
+  }
+  #wholeNavogationBar{
+  z-index: 99999;  
+  width: 99%;
+  margin: auto;
+  top: 0px;
+  background-color: rgb(254, 254, 254);
+  position: sticky;
+  top: 0px;
+  }
+  #upperNavBar {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  }
+  #navRightSection {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+  #navRightSection>div>a>span{
+  font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(122, 126, 127);
+  }
+  #navRightSection>div>a>span:hover{
+  color: red;
+  }
+  #navRightSection>div>a{ 
+  display: flex;
+  text-decoration: none;
+  }
+  #navLeftSection {
+  width: 40%;
+  display: flex;
+  }
+  #searchBoxDiv {
+  display: flex;
+  width: 60%;
+  margin-left: 5px;
+  border-radius: 3px;
+  border: 1px solid rgb(133, 133, 130);
+  }
+  #searchBoxDiv >div>img{
+  width: 33px;
+  margin-left: 5px;
+  margin-right: 5px;
+  }
+  #searchBox {
+      outline: none;
+  border: none;
+  height: 45px;
+  width: 85%;
+  }
+  #verticleLine{
+  width: 2px ;
+  height: 40px;
+  font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";    
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+  border-right: 2px solid rgb(223, 223, 223);
+  }
+  #navRightSectionA,#navRightSectionC{
+  position: relative;
+  display: inline-block;
+  }
+  #nav1dropDown1{
+  width: 250px;
+  display: none;
+  position: absolute;
+  z-index: 100; 
+  background-color: rgb(246, 249, 252);
+  box-shadow: rgb(151, 140, 140);
+  border-radius: 15px;
+  }   
+  #dropDownContent1{
+  width: 100%;
+  padding: 5px 30px 20px 20px;
+  line-height: 3;
+  }
+  #dropDownContent1 img{
+  width: 70%;
+  }
+  #navRightSectionA:hover #nav1dropDown1 {
+  display: block;
+  }
+  #dropDownContent2{
+  width: 100%;
+  line-height: 1;
+  }
+  #dropDownContent2 h2{
+  font-size: 18px;
+  color: rgb(61, 59, 59);
+  font-weight: "demi";
+  }
+  #dropDownContent2 p{
+  
+  font-size: 12px;
+  color: rgb(47, 47, 47);
+  font-weight: "demi";
+  }
+  #dropDownContent2 button{
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(244,51,151);
+  border-radius: 8px;
+  font-size: 18px;
+  }
+  #dropDownContent2 >a>div>img{
+  width: 8%;
+  }
+  #dropDownContent2 >a{
+  text-decoration: none;
+  }
+  #dropDownContent2 >a>div>span{
+  font-size: 18px;
+  color: rgb(79, 75, 75);
+  }
+  #nav1dropDown2{
+  width: 250px;
+  display: none;
+  position: absolute;
+  padding: 5px 20px 10px 20px;
+  /* z-index: 100;  */
+  background-color: rgb(246, 249, 252);
+  box-shadow: rgb(151, 140, 140);
+  border-radius: 15px;
+  left: -100px;
+  }
+  #navRightSectionC:hover #nav1dropDown2 {
+  display: block;
+  }
+  
+  #subLowerNavBar{
+  margin: auto;
+  width: 98%;
+  background-color: rgb(255, 255, 255);
+  
+  }
+  #subLowerNavBar>ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  #subLowerNavBar>ul>li>a{
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+  
+  }
+  #subLowerNavBar>ul>li>a:hover{
+  color: rgb(244, 51, 151);
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  }
+  #subLowerNavBar>ul>li:hover {
+  border-bottom: 2px solid rgb(244, 51, 151);
+  }
+  
+  .dropDownDivItems{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  }
+  .dropDownDiv{
+  width: 98%;
+  margin: auto;
+  margin-top: 2px;
+  right: 0%;
+  left: 0%;
+  transition: 0.5s;
+  position: absolute;
+  display: none;
+  background-color: rgb(254, 248, 248);
+  border: 1px solid rgb(160, 158, 158);
+  }
+  #subLowerNavBar>ul>li:hover .dropDownDiv{
+  display: block;
+  }
+  ul,li{
+  list-style: none;
+  }
+  a{
+  text-decoration: none;
+  }
+  .dropDownDivItems>div>h4{
+  font-size: 20px;
+  color: rgb(244, 51, 151);
+  font-weight: 600;
+  line-height: 20px;
+  font-family: "Mier demi";
+  }
+  .dropDownDivItems>div>ul>li>a{
+  font-size: 17px;
+  color: rgb(102, 102, 102);
+  font-weight: 450;
+  line-height: 33px;
+  }
+
+/* nav bar end */
+
+/* Mid part */
+
+#Mid-Part {
+    display: flex;
+    margin-top: 15px;
+    /* border: 1px solid blue; */
+    justify-content: center;
+}
+
+#Mid-Part>div {
+    width: 80%;
+    /* border: 1px solid red; */
+}
+
+#Mid-Part>div>hr {
+    width: 100%;
+}
+
+#title>h1 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 34px;
+    margin: 15px 0px 30px 0px;
+}
+
+#cart-container {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    /* margin: auto; */
+    gap: 20px;
+    /* height: 50px;    */
+}
+
+#cart-container>div>img {
+    width: 100%;
+}
+
+#cart-container>div {
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+#cart-container>div h4,
+#cart-container>div h5,
+#cart-container>div p {
+    margin-left: 15px;
+}
+
+#cart-container>div>button {
+    padding: 2px;
+    margin-left: 10px;
+}
+
+#total {
+    padding: 35px;
+    text-align: center;
+    width: 30%;
+    height: 470px;
+    position: sticky;
+    top: 60px;
+
+    left: 30px;
+    margin-bottom: 0px;
+    background-color: white;
+    /* border: 1px solid rebeccapurple; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+#total h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: #222;
+    ;
+}
+
+#flex {
+    padding: 15px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background: linear-gradient(rgb(253, 233, 242) 0%, rgb(253, 240, 232) 100%, rgb(253, 240, 232) 100%);
+}
+
+#finalprice {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: #F43397;
+    margin-top: 10px;
+    border-radius: 10px;
+
+
+}
+
+
+#finalprice input {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 7px;
+    /* margin-left: 15px; */
+
+}
+
+#finalprice+a>button {
+    width: 45%;
+    margin: auto;
+    padding: 10px 0px 10px 5px;
+    margin-top: 30px;
+    background-color: #F43397;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#finalprice+a>button:active {
+    background-color: #ff008c;
+}
+
+#offer {
+    margin-top: 20px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+#offer>p {
+    font-size: 20px;
+    border: none;
+}
+
+
+/* footerPart From Here */
+
+
+#footerPart{
+    margin: auto;
+    width: 98%;
+
+   margin-top: 40px;
+}
+#footerPartA{
+    background-color: rgb(249,249,249);
+    margin: auto;
+   
+    width: 98%;
+}
+
+#footerPartAin{
+    width: 88%;
+    margin: auto;
+    display: flex;
+   justify-content: space-between;
+  
+}
+#footerPartAin p{
+    color: rgb(102, 102, 102);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Mier book";
+    margin: 0px;
+    padding: 0px;
+}
+#footerPartAin>div>img{
+    width: 45%;
+}
+#footerPartAin>div:nth-child(1){
+    width: 30%;
+}
+#footerPartAin>div:nth-child(1)>h4{
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+}
+#footerPartAin>div:nth-child(2){
+    margin-top: 30px;
+    width: 13%;
+}
+#footerPartAin>div:nth-child(3){
+    margin-top: 30px;
+    width: 15%;
+}
+#footerPartAin>div:nth-child(4){
+    margin-top: 30px;
+    line-height: 40px;
+    width: 13%;
+}
+#footerPartAin>div:nth-child(5){
+    margin-top: 30px;
+    width: 25%;
+}
+#footerPartAin span{
+    color: rgb(102, 102, 102);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Mier demi";
+    margin: 0px;
+    padding: 0px;
+}
+#footerPartAin h6{
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 5  8px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+}
+#footerPartB{   
+    margin-top: 20px;
+    padding: 20px 0px 20px 0px;
+    border: 1px solid ;
+    border-radius: 8px;
+}
+#footerPartBa{
+    width: 96%;
+    margin: auto;
+    display: flex;
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+    line-height: 34px;
+    justify-content: space-between;
+
+}
+#footerPartBab{
+    /* border: 2px dashed rgb(90, 22, 42); */
+    width: 96%;
+    margin: auto;
+}
+
+
+.footerItemTexth2{
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+}
+.footerItemTextP{
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+}
+.linkContainer a{
+    color: rgb(244, 51, 151);
+}
+
+#footerLowerPSect>a{
+    color: rgb(244, 51, 151);
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 600;
+}
+.linkkSection>div:nth-child(1){
+    color: rgb(51, 51, 51);;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}

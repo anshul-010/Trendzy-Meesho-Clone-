@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap");
+:root {
+  --pink: #F43397;
+  --darkPink: #c92a7c;
+  --lightPink: #F7A8CA;
+  --lighterPink: #FDE9F2;
+  --green: #038D63;
+  --lightGreen: #23BB75;
+  --lighterGreen: #91E5BD;
+  --red: #E11900;
+  --lightRed: #EE7212;
+  --green: #388e3c;
+  --orange: #F4B619;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.4s linear;
+  text-decoration: none;
+}
+#wholeNavogationBar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 9999;
+}
+#upperNavBar {
+}
+/* nav bbar css */
+#priceContainer {
+  position: -webkit;
+  position: sticky;
+  top: 100px;
+}
+
+#upperNavBar {
+  padding: 50px;
+  font-size: 20px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 75px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#upperNavBar img {
+  margin-left: 75px;
+  margin-top: 7px;
+}
+/* main content */
+#mainContainer {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+  top: 15px;
+}
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 70px;
+}
+#contactDetails {
+  border: rgb(235, 235, 235) solid 1px;
+  width: 550px;
+  height: 700px;
+  border-radius: 15px;
+  /* margin: auto; */
+  /* position: relative;
+  top: 200px; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#container3 button {
+  width: 95%;
+  height: 45px;
+  color: white;
+  font-weight: 600;
+  font-size: large;
+  background-color: #f43397;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#container3 button:active {
+  background-color: #b1276e;
+}
+#contactDetails input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(223, 223, 223);
+  width: 40%;
+  font-size: large;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+  height: 40px;
+}
+#contactDetails input:focus {
+
+  border-bottom: 1px solid var(--pink);
+transition:border-bottom 0.4s ;
+  color: rgb(72, 72, 72);
+  height: 40px;
+}
+#contacts {
+  display: flex;
+  font-size: larger;
+  justify-content: flex-start;
+}
+#contacts > svg {
+  margin: 4px;
+}
+#addressbar > svg {
+  margin: 4px;
+  margin-right: 12px;
+}
+#contacts > h6 {
+}
+h6 {
+  margin: 0;
+}
+#addressbar {
+  display: flex;
+}
+#container input:not(#cityState input) {
+  width: 100%;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#cityState {
+  display: flex;
+  justify-content: space-between;
+}
+#cityState input {
+  border-bottom: 1px solid rgb(223, 223, 223);
+  width: 40%;
+  font-size: large;
+  font-weight: 700;
+  color: rgb(72, 72, 72);
+  height: 40px;
+}
+#contacts {
+  margin-bottom: 25px;
+}
+#contacts h6 {
+  font-size: large;
+}
+#addressbar {
+  margin-bottom: 25px;
+}
+#addressbar h6 {
+  margin-bottom: 25px;
+  font-size: large;
+}
+
+#container label {
+  color: #e11900;
+  font-size: 10px;
+  visibility: hidden;
+}
+
+#container2 {
+  margin-top: 5px;
+}
+
+.vertical {
+  border: 0.5px solid none;
+  background-color: rgb(235, 235, 235);
+  height: 700px;
+  width: 1px;
+  margin-left: 0;
+}
+
+/* total price css */
+#priceContainer {
+  width: 400px;
+  height: 400px;
+  padding: 25px;
+}
+#priceContainer div {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#priceContainer > h3 {
+  /* margin-top: 0;
+  margin-bottom: 0; */
+}
+#priceContainer hr {
+  border: 1px solid rgb(227, 227, 227);
+}
+#totalProductPriceDiv {
+  display: flex;
+  justify-content: space-between;
+}
+#orderTotalDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+#userPanel{
+  background-color: var(--lighterPink);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 25px;
+  font-size: larger;
+
+}
+#userPanel a{
+color: var(--pink);
+font-weight: 600;
+ 
+
+}
+#userPanel button{
+width: 100%;
+height: 50px;
+color: white;
+font-size: 20px;
+font-weight: 500;
+background-color: var(--pink);
+border-radius: 5px;
+cursor: pointer;
+margin-top: 15px;
+}
+#userPanel button:active{
+width: 100%;
+height: 50px;
+color: white;
+font-size: 20px;
+font-weight: 500;
+background-color:var(--darkPink) ;
+border-radius: 5px;
+}
+@media screen and (max-width: 650px) {
+  #mainContainer{
+    width: 100%;
+  }
+  #container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #contactDetails {
+    width: 100%;
+margin-bottom:50px ;
+border: none;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  #priceContainer {
+    width: 100%;
+
+  }
+}

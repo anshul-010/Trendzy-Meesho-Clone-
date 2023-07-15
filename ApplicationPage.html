@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders</title>
+    <link rel="stylesheet" href="./styles/ApplicationPage.css" />
+    <link rel="icon" href="./localImages/Trendzy.png">
+  </head>
+  <body>
+    <div id="wholeNavogationBar">
+      <div id="upperNavBar">
+        <div id="navLeftSection">
+          <div id="headerLogoCont">
+            <a href="./index.html">
+              <img src="./localImages/Trendzy1a.png" alt="MEESHO" />
+            </a>
+          </div>
+          <div id="searchBoxDiv">
+            <div>
+              <img src="./localImages/search.png" alt="" />
+            </div>
+            <input id="searchBox" type="text" placeholder="Try Saree, Kurti or Search by Product Code" />
+          </div>
+        </div>
+        <div id="navRightSection">
+          <div id="navRightSectionA">
+            <a href="">
+              <img src="./localImages/smartphone1.png" alt="" />
+              <span>Download App</span>
+            </a>
+            <div id="nav1dropDown1">
+              <div id="dropDownContent1">
+                <span>Download From a</span>
+                <div>
+                  <a href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow">
+                    <img src="https://images.meesho.com/images/pow/playstore-icon-big.webp" alt="">
+                  </a>
+                </div>
+                <div>
+                  <a href="https://apps.apple.com/us/app/meesho/id1457958492">
+                    <img src="https://images.meesho.com/images/pow/appstore-icon-big.webp" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="verticleLine"></div>
+          <div>
+            <a href="">
+              <span>Become a Supplier</span>
+            </a>
+          </div>
+          <div id="verticleLine"></div>
+          <div id="navRightSectionC">
+            <a href="">
+              <img src="./localImages/profile.png" alt="">
+              <span>Profile</span>
+            </a>
+            <div id="nav1dropDown2">
+              <div id="dropDownContent2">
+                <h2 id="userNumber">Hello User</h2>
+                <p>To Access Your Meesho Account</p>
+                <!-- signUp Page Link Place here                     -->
+                <a id="signupLogout" href="">
+                  <button>Sign Up</button>
+                </a>
+                <hr>
+                <!-- Cart Page Link Place here                     -->
+                <a href="./ApplicationPage.html">
+                  <div>
+                    <img src="./localImages/cart.png" alt="">
+                    <span>My Orders</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="verticleLine"></div>
+          <div id="cartDiv">
+    
+            <a href="./cart.html">
+              <img src="./images/cart.png" alt="">
+    
+              <span>Cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div id="lowerNavBar">
+        <div id="subLowerNavBar">
+          <ul>
+            <li>
+              <a href="women.html">Women Ethnic</a>
+              <div class="dropDownDiv">
+                <div class="dropDownDivItems">
+                  <div>
+                    <h4>All Women Ethnic </h4>
+                    <ul>
+                      <li><a href="">View All</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Sarees</h4>
+                    <ul>
+                      <li><a href="">All Sarees</a></li>
+                      <li><a href="">Silk Sarees</a></li>
+                      <li><a href="">Cotton Silk Sarees</a></li>
+                      <li><a href="">Cotton Sarees</a></li>
+                      <li><a href="">Georgette Sarees</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurtis</h4>
+                    <ul>
+                      <li><a href="">All Kurtis</a></li>
+                      <li><a href="">Anarkali Kurtis</a></li>
+                      <li><a href="">Rayon Kurtis</a></li>
+                      <li><a href="">Cotton Kurtis</a></li>
+                      <li><a href="">Embroidered Kurtis</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurta Sets</h4>
+                    <ul>
+                      <li><a href="">All Kurta Sets</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Suits & Dress Material</h4>
+                    <ul>
+                      <li><a href="">All Suits & Dress Material</a></li>
+                      <li><a href="">Cotton Suits</a></li>
+                      <li><a href="">Embroidered Suits</a></li>
+                      <li><a href="">Chanderi Suits</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Other Ethnic</h4>
+                    <ul>
+                      <li><a href="">Blouses</a></li>
+                      <li><a href="">Dupattas</a></li>
+                      <li><a href="">Lehanga</a></li>
+                      <li><a href="">Gown</a></li>
+                      <li><a href="">Ethnic Bottomwear</a></li>
+                    </ul>
+                  </div>
+                </div>
+    
+              </div>
+            </li>
+            <li>
+              <a href="women.html">Women Western</a>
+              <div class="dropDownDiv">
+                <div class="dropDownDivItems">
+                  <div>
+                    <h4>Topwear</h4>
+                    <ul>
+                      <li>Tops</li>
+                      <li>Dresses</li>
+                      <li>Sweaters</li>
+                      <li>Jumpsuits</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Bottomwear</h4>
+                    <ul>
+                      <li><a href="">Jeans</a></li>
+                      <li><a href="">Joggers</a></li>
+                      <li><a href="">Cotton Silk Sarees</a></li>
+                      <li><a href="">Palazzos</a></li>
+                      <li><a href="">Shorts</a></li>
+                      <li><a href="">Skirts</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Innerwear</h4>
+                    <ul>
+                      <li><a href="">Bra</a></li>
+                      <li><a href="">Briefs</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Sleepwear</h4>
+                    <ul>
+                      <li><a href="">Nightsuits</a></li>
+                      <li><a href="">Babydolls</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Suits & Dress Material</h4>
+                    <ul>
+                      <li><a href="">All Suits & Dress Material</a></li>
+                      <li><a href="">Cotton Suits</a></li>
+                      <li><a href="">Embroidered Suits</a></li>
+                      <li><a href="">Chanderi Suits</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Other Ethnic</h4>
+                    <ul>
+                      <li><a href="">Blouses</a></li>
+                      <li><a href="">Dupattas</a></li>
+                      <li><a href="">Lehanga</a></li>
+                      <li><a href="">Gown</a></li>
+                      <li><a href="">Ethnic Bottomwear</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="men.html">Men</a>
+              <div class="dropDownDiv">
+                <div class="dropDownDivItems">
+                  <div>
+                    <h4>Top Wear</h4>
+                    <ul>
+                      <li><a href="">All Top Wear</a></li>
+                      <li><a href="">Tshirts</a></li>
+                      <li><a href="">Shirts</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Bottom Wear</h4>
+                    <ul>
+                      <li><a href="">Track Pants</a></li>
+                      <li><a href="">Jeans</a></li>
+                      <li><a href="">Trousers</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Men Accessories</h4>
+                    <ul>
+                      <li><a href="">All Men Accessories</a></li>
+                      <li><a href="">Watches</a></li>
+                      <li><a href="">Belts</a></li>
+                      <li><a href="">Wallets</a></li>
+                      <li><a href="">Jewellery</a></li>
+                      <li><a href="">Sunglasses</a></li>
+                      <li><a href="">Bags</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Men Footwear</h4>
+                    <ul>
+                      <li><a href="">Casual Shoes</a></li>
+                      <li><a href="">Sports Shoes</a></li>
+                      <li><a href="">Sandals</a></li>
+                      <li><a href="">Formal Shoes</a></li>
+                      <li><a href="">Lofar Shoes</a></li>
+                      <li><a href="">Floappers</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Ethnic Wear</h4>
+                    <ul>
+                      <li><a href="">Men Kurtas</a></li>
+                      <li><a href="">Ethnic Jackets</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Inner & Sleep Wear</h4>
+                    <ul>
+                      <li><a href="">All Inner & Sleep Wear</a></li>
+                      <li><a href="">Vests</a></li>
+                      <li><a href="">Ethnic Bottomwear</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="">Kids</a>
+              <div class="dropDownDiv">
+                <div class="dropDownDivItems">
+                  <div>
+                    <h4>Boys & Girls 2+ Years</h4>
+                    <ul>
+                      <li>Dresses</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Infant 0-2 Years</h4>
+                    <ul>
+                      <li><a href="">Romperss</a></li>
+                      <li><a href="">Silk Sarees</a></li>
+                      <li><a href="">Cotton Silk Sarees</a></li>
+                      <li><a href="">Cotton Sarees</a></li>
+                      <li><a href="">Georgette Sarees</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Toys & Accessories</h4>
+                    <ul>
+                      <li><a href="">Soft Toys</a></li>
+                      <li><a href="">Footwear</a></li>
+                      <li><a href="">Stationery</a></li>
+                      <li><a href="">Watches</a></li>
+                      <li><a href="">Bags & Backpacks</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Baby Care</h4>
+                    <ul>
+                      <li><a href="">All Baby Care</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Suits & Dress Material</h4>
+                    <ul>
+                      <li><a href="">All Suits & Dress Material</a></li>
+                      <li><a href="">Cotton Suits</a></li>
+                      <li><a href="">Embroidered Suits</a></li>
+                      <li><a href="">Chanderi Suits</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Other Ethnic</h4>
+                    <ul>
+                      <li><a href="">Blouses</a></li>
+                      <li><a href="">Dupattas</a></li>
+                      <li><a href="">Lehanga</a></li>
+                      <li><a href="">Gown</a></li>
+                      <li><a href="">Ethnic Bottomwear</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="">Home & Kitchenc</a>
+              <div class="dropDownDiv">
+                <div class="dropDownDivItems">
+                  <div>
+                    <h4>Women Ethnic </h4>
+                    <ul>
+                      <li>View All</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Sarees</h4>
+                    <ul>
+                      <li><a href="">All Sarees</a></li>
+                      <li><a href="">Silk Sarees</a></li>
+                      <li><a href="">Cotton Silk Sarees</a></li>
+                      <li><a href="">Cotton Sarees</a></li>
+                      <li><a href="">Georgette Sarees</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurtis</h4>
+                    <ul>
+                      <li><a href="">All Kurtis</a></li>
+                      <li><a href="">Anarkali Kurtis</a></li>
+                      <li><a href="">Rayon Kurtis</a></li>
+                      <li><a href="">Cotton Kurtis</a></li>
+                      <li><a href="">Embroidered Kurtis</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurta Sets</h4>
+                    <ul>
+                      <li><a href="">All Kurta Sets</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Suits & Dress Material</h4>
+                    <ul>
+                      <li><a href="">All Suits & Dress Material</a></li>
+                      <li><a href="">Cotton Suits</a></li>
+                      <li><a href="">Embroidered Suits</a></li>
+                      <li><a href="">Chanderi Suits</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>
+                      <h4>Other Ethnic</h4>
+                      <li><a href="">Blouses</a></li>
+                      <li><a href="">Dupattas</a></li>
+                      <li><a href="">Lehanga</a></li>
+                      <li><a href="">Gown</a></li>
+                      <li><a href="">Ethnic Bottomwear</a></li>
+                    </ul>
+                  </div>
+                </div>
+    
+              </div>
+            </li>
+            <li>
+              <a href="">Beauty & Health</a>
+              <div class="dropDownDiv">
+                <div class="dropDownDivItems">
+                  <div>
+                    <h4>Women Ethnic </h4>
+                    <ul>
+                      <li>View All</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Sarees</h4>
+                    <ul>
+                      <li><a href="">All Sarees</a></li>
+                      <li><a href="">Silk Sarees</a></li>
+                      <li><a href="">Cotton Silk Sarees</a></li>
+                      <li><a href="">Cotton Sarees</a></li>
+                      <li><a href="">Georgette Sarees</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurtis</h4>
+                    <ul>
+                      <li><a href="">All Kurtis</a></li>
+                      <li><a href="">Anarkali Kurtis</a></li>
+                      <li><a href="">Rayon Kurtis</a></li>
+                      <li><a href="">Cotton Kurtis</a></li>
+                      <li><a href="">Embroidered Kurtis</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurta Sets</h4>
+                    <ul>
+                      <li><a href="">All Kurta Sets</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Suits & Dress Material</h4>
+                    <ul>
+                      <li><a href="">All Suits & Dress Material</a></li>
+                      <li><a href="">Cotton Suits</a></li>
+                      <li><a href="">Embroidered Suits</a></li>
+                      <li><a href="">Chanderi Suits</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>
+                      <h4>Other Ethnic</h4>
+                      <li><a href="">Blouses</a></li>
+                      <li><a href="">Dupattas</a></li>
+                      <li><a href="">Lehanga</a></li>
+                      <li><a href="">Gown</a></li>
+                      <li><a href="">Ethnic Bottomwear</a></li>
+                    </ul>
+                  </div>
+                </div>
+    
+              </div>
+            </li>
+            <li>
+              <a href="">Jewellery & Accessories</a>
+              <div class="dropDownDiv">
+                <div class="dropDownDivItems">
+                  <div>
+                    <h4>Women Ethnic </h4>
+                    <ul>
+                      <li>View All</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Sarees</h4>
+                    <ul>
+                      <li><a href="">All Sarees</a></li>
+                      <li><a href="">Silk Sarees</a></li>
+                      <li><a href="">Cotton Silk Sarees</a></li>
+                      <li><a href="">Cotton Sarees</a></li>
+                      <li><a href="">Georgette Sarees</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurtis</h4>
+                    <ul>
+                      <li><a href="">All Kurtis</a></li>
+                      <li><a href="">Anarkali Kurtis</a></li>
+                      <li><a href="">Rayon Kurtis</a></li>
+                      <li><a href="">Cotton Kurtis</a></li>
+                      <li><a href="">Embroidered Kurtis</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurta Sets</h4>
+                    <ul>
+                      <li><a href="">All Kurta Sets</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Suits & Dress Material</h4>
+                    <ul>
+                      <li><a href="">All Suits & Dress Material</a></li>
+                      <li><a href="">Cotton Suits</a></li>
+                      <li><a href="">Embroidered Suits</a></li>
+                      <li><a href="">Chanderi Suits</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>
+                      <h4>Other Ethnic</h4>
+                      <li><a href="">Blouses</a></li>
+                      <li><a href="">Dupattas</a></li>
+                      <li><a href="">Lehanga</a></li>
+                      <li><a href="">Gown</a></li>
+                      <li><a href="">Ethnic Bottomwear</a></li>
+                    </ul>
+                  </div>
+                </div>
+    
+              </div>
+            </li>
+            <li>
+              <a href="">Bags & Footwear</a>
+              <div class="dropDownDiv">
+                <div class="dropDownDivItems">
+                  <div>
+                    <h4>Women Ethnic </h4>
+                    <ul>
+                      <li><a href="">View All</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Sarees</h4>
+                    <ul>
+                      <li><a href="">All Sarees</a></li>
+                      <li><a href="">Silk Sarees</a></li>
+                      <li><a href="">Cotton Silk Sarees</a></li>
+                      <li><a href="">Cotton Sarees</a></li>
+                      <li><a href="">Georgette Sarees</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurtis</h4>
+                    <ul>
+                      <li><a href="">All Kurtis</a></li>
+                      <li><a href="">Anarkali Kurtis</a></li>
+                      <li><a href="">Rayon Kurtis</a></li>
+                      <li><a href="">Cotton Kurtis</a></li>
+                      <li><a href="">Embroidered Kurtis</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurta Sets</h4>
+                    <ul>
+                      <li><a href="">All Kurta Sets</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Suits & Dress Material</h4>
+                    <ul>
+                      <li><a href="">All Suits & Dress Material</a></li>
+                      <li><a href="">Cotton Suits</a></li>
+                      <li><a href="">Embroidered Suits</a></li>
+                      <li><a href="">Chanderi Suits</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>
+                      <h4>Other Ethnic</h4>
+                      <li><a href="">Blouses</a></li>
+                      <li><a href="">Dupattas</a></li>
+                      <li><a href="">Lehanga</a></li>
+                      <li><a href="">Gown</a></li>
+                      <li><a href="">Ethnic Bottomwear</a></li>
+                    </ul>
+                  </div>
+                </div>
+    
+              </div>
+            </li>
+            <li>
+              <a href="">Electronics</a>
+              <div class="dropDownDiv">
+                <div class="dropDownDivItems">
+                  <div>
+                    <h4>Women Ethnic </h4>
+                    <ul>
+                      <li><a href="">View All</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Sarees</h4>
+                    <ul>
+                      <li><a href="">All Sarees</a></li>
+                      <li><a href="">Silk Sarees</a></li>
+                      <li><a href="">Cotton Silk Sarees</a></li>
+                      <li><a href="">Cotton Sarees</a></li>
+                      <li><a href="">Georgette Sarees</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurtis</h4>
+                    <ul>
+                      <li><a href="">All Kurtis</a></li>
+                      <li><a href="">Anarkali Kurtis</a></li>
+                      <li><a href="">Rayon Kurtis</a></li>
+                      <li><a href="">Cotton Kurtis</a></li>
+                      <li><a href="">Embroidered Kurtis</a></li>
+                      <li><a href="">Chiffon Sarees</a></li>
+                      <li><a href="">Satin Sarees</a></li>
+                      <li><a href="">Embroidered Sarees</a></li>
+    
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Kurta Sets</h4>
+                    <ul>
+                      <li><a href="">All Kurta Sets</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Suits & Dress Material</h4>
+                    <ul>
+                      <li><a href="">All Suits & Dress Material</a></li>
+                      <li><a href="">Cotton Suits</a></li>
+                      <li><a href="">Embroidered Suits</a></li>
+                      <li><a href="">Chanderi Suits</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>
+                      <h4>Other Ethnic</h4>
+                      <li><a href="">Blouses</a></li>
+                      <li><a href="">Dupattas</a></li>
+                      <li><a href="">Lehanga</a></li>
+                      <li><a href="">Gown</a></li>
+                      <li><a href="">Ethnic Bottomwear</a></li>
+                    </ul>
+                  </div>
+                </div>
+    
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div id="mainContainer">
+      <div id="container1">
+        <div>
+          <svg
+            viewBox="0 0 240 240"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            iconSize="240"
+            class="sc-gswNZR VnkiY"
+          >
+            <circle cx="120" cy="120" r="120" fill="#F1F5FF"></circle>
+            <mask
+              id="myOrder_svg__a"
+              mask-type="alpha"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="240"
+              height="240"
+            >
+              <circle cx="120" cy="120" r="120" fill="#F1F5FF"></circle>
+            </mask>
+            <g mask="url(#myOrder_svg__a)">
+              <path
+                d="M87.318 146.913c-8.273 18.793-6.516 31.675-10.028 42.676-5.18 16.283-19.842 14.157-19.842 14.157s2.18-14.283 2.736-33.049c.215-7.256 4.618-13.735 11.26-16.7l15.874-7.084Z"
+                fill="#F8A791"
+              ></path>
+              <path
+                d="M70.805 170.955c4.916-11.418 4.816-25.198 13.983-43.662a87.021 87.021 0 0 1 2.53-4.81l-5.577 1.869-13.686 4.572a22.41 22.41 0 0 0-3.083 1.304v49.473c2.174-2.108 4.198-4.937 5.833-8.746Z"
+                fill="#F8A791"
+              ></path>
+              <path
+                d="M64.975 130.224V179.7c-8.3 8.041-18.835 5.455-18.835 5.455s.297-1.561.767-4.06a4043.94 4043.94 0 0 0 3.585-19.146c1.238-6.77 2.332-12.889 2.585-14.883.927-7.29 5.46-13.54 11.898-16.842Z"
+                fill="#FFBDA6"
+              ></path>
+              <path
+                d="M77.21 98.246c6.832-2.921 14.113-6.305 21.31-10.126.87-.459 1.737-.931 2.604-1.402a300.638 300.638 0 0 1-8.405-5.486 336.263 336.263 0 0 1-14.14-10.095c-.634-.472-1.242-.943-1.849-1.4-3.206-2.436-8.045-6.39-11.758-9.46v27.144c2.349 2.26 4.94 4.453 7.697 6.83 1.471 1.264 2.991 2.59 4.54 3.995Z"
+                fill="#F8A791"
+              ></path>
+              <path
+                d="M59.648 55.845s-10.929 12.304 1.08 27.03c1.295 1.59 2.72 3.081 4.243 4.547V60.278c-3.038-2.511-5.323-4.433-5.323-4.433ZM64.645 103.323c-7.604 2.911-23.354 7.996-23.354 7.996s4.64 15.762 23.518 13.443c.055-.007.109-.019.163-.026v-21.539c-.108.041-.22.086-.327.126Z"
+                fill="#FFBDA6"
+              ></path>
+              <path
+                d="M89.629 111.521c-4.218-5.45-8.427-9.653-12.42-13.275-.095.041-.194.087-.29.127a337.892 337.892 0 0 1-11.947 4.825v21.539c8.082-1.033 15.95-4.507 26.465-7.004.75-.177 1.527-.344 2.304-.511a96.365 96.365 0 0 0-4.098-5.701h-.014Z"
+                fill="#F8A791"
+              ></path>
+              <path
+                d="M198.42 264.587c-2.649 20.659-44.885 32.255-62.846 18.851-10.937-8.163-12.008-39.387-26.065-46.109-14.021-6.696-21.815-18.762-25.333-25.671-1.603-3.149-2.312-5.233-2.312-5.233s1.156-.124 3.232-.322c12.23-1.203 56.258-5.085 81.217-1.662 2.238.298 4.313.67 6.202 1.092 7.085 1.612 11.511 4.141 11.373 7.961-.683 18.169 17.295 29.527 14.532 51.093Z"
+                fill="#FFBDA6"
+              ></path>
+              <path
+                d="M119.503 60.94c17.3 0 33.108 8.903 45.204 23.6V48.378c0-4.787-3.891-8.67-8.69-8.67H82.989c-4.799 0-8.69 3.883-8.69 8.67V84.54c12.097-14.697 27.905-23.598 45.204-23.598Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M164.709 83.334v108.878c0 .094 0 .189-.008.275-.007.137-.014.275-.029.404a9.09 9.09 0 0 1-2.092 5.094 9.17 9.17 0 0 1-7.068 3.309H83.495a9.167 9.167 0 0 1-6.713-2.904 9.121 9.121 0 0 1-2.483-6.272V83.334c4.417-5.368 9.334-9.963 14.635-13.634 3.932-2.73 8.088-4.948 12.404-6.589a33.03 33.03 0 0 1 1.847-.657A50.327 50.327 0 0 1 119.5 59.73c8.053 0 15.794 1.93 22.977 5.484.84.412 1.68.852 2.513 1.322.109.058.217.115.319.173.753.427 1.491.86 2.223 1.33.514.31 1.021.635 1.528.982 5.692 3.772 10.949 8.605 15.649 14.313Z"
+                fill="#F1F5FF"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M145.5 121.503c0-2.716-.53-6.466-4.154-10.215-2.858-2.952-6.452-4.429-10.577-4.488-4.156-.028-7.757 1.452-10.729 4.416-2.847-2.91-6.391-4.365-10.573-4.394-4.36-.03-8.161 1.624-11.195 4.93-2.387 2.569-3.624 5.934-3.654 9.389L94.5 139.77c-.03 2.273 1.827 4.074 4.154 4.104 2.299 0 4.184-1.801 4.214-4.045l.147-18.718c0-1.712.648-3.188 1.885-4.399 1.297-1.21 2.77-1.801 4.538-1.771 1.856.029 3.417.649 4.684 1.978 1.149 1.181 1.738 2.775 1.709 4.399l-.118 18.54c0 2.274 1.886 4.104 4.213 4.134 2.328.029 4.213-1.801 4.243-4.075l.088-18.422-.001-.153.002-.223c0-1.712.648-3.188 1.885-4.399 1.297-1.21 2.77-1.801 4.538-1.771 1.856.029 3.417.649 4.684 1.978 1.149 1.181 1.738 2.775 1.709 4.399l-.118 18.54c0 2.274 1.886 4.104 4.213 4.134 2.328.029 4.213-1.801 4.243-4.075l.088-18.422Z"
+                fill="#F43397"
+              ></path>
+              <path
+                d="M166.313 204.441a9.192 9.192 0 0 1-6.004 2.233H88.29c-1.13 0-2.2-.2-3.194-.571-2.076.198-3.232.322-3.232.322s.71 2.084 2.312 5.233a13.4 13.4 0 0 0 3.257.398h73.733c4.849 0 9.075-2.617 11.349-6.523a72.306 72.306 0 0 0-6.202-1.092Z"
+                fill="#F8A791"
+              ></path>
+              <path
+                d="M164.706 65.794V192.12c0 2.23-.799 4.273-2.123 5.862a9.184 9.184 0 0 1-7.074 3.314H83.493c-5.078 0-9.196-4.108-9.196-9.176V48.55c0-4.788 3.891-8.67 8.69-8.67h73.029c4.799 0 8.69 3.882 8.69 8.67v17.244ZM156.371 34.5h-73.74c-7.25 0-13.127 5.864-13.127 13.098V193.58c0 7.233 5.878 13.097 13.128 13.097h73.739c7.251 0 13.128-5.864 13.128-13.097V47.598c0-7.234-5.877-13.098-13.128-13.098Z"
+                fill="#6B2677"
+              ></path>
+              <path
+                d="M98.31 47.502h-8.704c-.69 0-1.249-.558-1.249-1.245v-.97c0-.687.56-1.245 1.249-1.245h8.703c.69 0 1.248.558 1.248 1.245v.97c0 .688-.558 1.245-1.248 1.245ZM85.036 47.502h-2.453c-.689 0-1.247-.558-1.247-1.245v-.97c0-.687.558-1.245 1.247-1.245h2.453c.69 0 1.248.558 1.248 1.245v.97c0 .688-.559 1.245-1.248 1.245ZM155.915 45.682a1.81 1.81 0 0 1-1.811 1.806c-.999 0-1.81-.809-1.81-1.806s.811-1.806 1.81-1.806c1 0 1.811.809 1.811 1.806ZM143.066 45.682c0 .997-.81 1.806-1.81 1.806s-1.811-.809-1.811-1.806.811-1.806 1.811-1.806c1 0 1.81.809 1.81 1.806ZM149.492 45.682c0 .997-.81 1.806-1.811 1.806-1 0-1.81-.809-1.81-1.806s.81-1.806 1.81-1.806c1.001 0 1.811.809 1.811 1.806Z"
+                fill="#BDD8FF"
+              ></path>
+              <path
+                d="m54.33 172.453-.891 6.763a2.396 2.396 0 0 1-2.499 2.073l-4.033-.195a4007.42 4007.42 0 0 0 3.585-19.146 12.061 12.061 0 0 1 3.838 10.505Z"
+                fill="#FFD7C9"
+              ></path>
+              <path
+                d="m183.886 213.49-5.481-3.309c-10.97 16.516-26.931 25.092-36.953 19.305-10.754-6.184-9.515-25.915.311-45.394 2.896-5.751 6.409-11.335 10.174-16.357 6.032-7.998 10.16-17.325 11.398-27.259 2.267-18.243-4.076-29.99-3.049-41.702 1.797-20.663 19.727-22.021 19.727-22.021s.108 1.517.362 4.234c.065.527.123 1.09.174 1.705.014.094.021.195.029.289a370.13 370.13 0 0 0 2.629 20.034c.057.376.115.759.181 1.142.107.715.223 1.43.346 2.153 2.231 13.409 5.657 29.781 10.827 45.538 3.853 11.798-7.749 44.158-10.675 61.642Z"
+                fill="#FFBDA6"
+              ></path>
+              <path
+                d="M183.206 103.015c-4.011-1.192-7.241-4.516-8.081-8.923l-1.377-7.246a2.385 2.385 0 0 1 1.717-2.753l5.084-1.402c.014.094.021.195.029.29a371.023 371.023 0 0 0 2.628 20.034Z"
+                fill="#FFD7C9"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <span style="font-size: 35px;">Track Orders on App</span><br />
+        <span>Download the Meesho App to track your orders</span><br />
+        <a href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow" target="_blank">
+        <button id="appButton">Download Meesho App</button>
+        </a>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/ApplicationPage.js"></script>
+</html>

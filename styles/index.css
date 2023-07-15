@@ -1,0 +1,848 @@
+* {
+  padding: 0px;
+  transition: all 0.2s linear;
+}
+body {
+  margin: 0px;
+  font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  text-align: left;
+  margin: auto;
+}
+
+#wholeNavogationBar {
+  width: 100%;
+  padding-top:6px ;
+  margin: auto;
+  top: 0px;
+  background-color: rgb(254, 254, 254);
+  position: sticky;
+  top: 0px;
+}
+#upperNavBar {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#navRightSection {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#navRightSection > div > a > span {
+  font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(122, 126, 127);
+}
+#navRightSection > div > a > span:hover {
+  color: red;
+}
+#navRightSection > div > a {
+  display: flex;
+  text-decoration: none;
+}
+#navLeftSection {
+  width: 40%;
+  display: flex;
+}
+#searchBoxDiv {
+  display: flex;
+  width: 60%;
+  margin-left: 5px;
+  border-radius: 3px;
+  border: 1px solid rgb(133, 133, 130);
+}
+#searchBoxDiv input {
+    font-size: large;
+
+}
+#searchBoxDiv > div > img {
+  width: 33px;
+ margin:8px 5px 0 5px;
+}
+#searchBox {
+  outline: none;
+  border: none;
+  height: 45px;
+  width: 85%;
+}
+#verticleLine {
+  width: 2px;
+  height: 40px;
+  font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+  border-right: 2px solid rgb(223, 223, 223);
+}
+#navRightSectionA,
+#navRightSectionC {
+  position: relative;
+  display: inline-block;
+}
+#nav1dropDown1 {
+  width: 250px;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: rgb(246, 249, 252);
+  box-shadow: rgb(151, 140, 140);
+  border-radius: 15px;
+}
+#dropDownContent1 {
+  width: 100%;
+  padding: 5px 30px 20px 20px;
+  line-height: 3;
+}
+#dropDownContent1 img {
+  width: 70%;
+}
+#navRightSectionA:hover #nav1dropDown1 {
+  display: block;
+}
+#dropDownContent2 {
+  width: 100%;
+  line-height: 1;
+}
+#dropDownContent2 h2 {
+  font-size: 18px;
+  color: rgb(61, 59, 59);
+  font-weight: "demi";
+}
+#dropDownContent2 p {
+  font-size: 12px;
+  color: rgb(47, 47, 47);
+  font-weight: "demi";
+}
+#dropDownContent2 button {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(244, 51, 151);
+  border-radius: 8px;
+  font-size: 18px;
+}
+#dropDownContent2 > a > div > img {
+  width: 8%;
+}
+#dropDownContent2 > a {
+  text-decoration: none;
+}
+#dropDownContent2 > a > div > span {
+  font-size: 18px;
+  color: rgb(79, 75, 75);
+}
+#nav1dropDown2 {
+  width: 250px;
+  display: none;
+  position: absolute;
+  padding: 5px 20px 10px 20px;
+  /* z-index: 100;  */
+  background-color: rgb(246, 249, 252);
+  box-shadow: rgb(151, 140, 140);
+  border-radius: 15px;
+  left: -100px;
+}
+#navRightSectionC:hover #nav1dropDown2 {
+  display: block;
+}
+
+#subLowerNavBar {
+  margin: auto;
+  width: 98%;
+  background-color: rgb(255, 255, 255);
+}
+#subLowerNavBar > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#subLowerNavBar > ul > li > a {
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+}
+#subLowerNavBar > ul > li > a:hover {
+  color: rgb(244, 51, 151);
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+}
+#subLowerNavBar > ul > li:hover {
+  border-bottom: 2px solid rgb(244, 51, 151);
+}
+
+.dropDownDivItems {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.dropDownDiv {
+  width: 98%;
+  margin: auto;
+  margin-top: 2px;
+  right: 0%;
+  left: 0%;
+  transition: 0.5s;
+  position: absolute;
+  display: none;
+  background-color: rgb(254, 248, 248);
+  border: 1px solid rgb(160, 158, 158);
+}
+#subLowerNavBar > ul > li:hover .dropDownDiv {
+  display: block;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.dropDownDivItems > div > h4 {
+  font-size: 20px;
+  color: rgb(244, 51, 151);
+  font-weight: 600;
+  line-height: 20px;
+  font-family: "Mier demi";
+}
+.dropDownDivItems > div > ul > li > a {
+  font-size: 17px;
+  color: rgb(102, 102, 102);
+  font-weight: 450;
+  line-height: 33px;
+}
+
+#subBodyImagePoster {
+  width: 98%;
+  margin: auto;
+  margin-top: 40px;
+}
+#subBodyImagePoster1 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+#subBodyImagePoster1A {
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(249, 249, 249);
+}
+#subBodyImagePoster1Aa {
+  display: flex;
+}
+#subBodyImagePoster1Aa > div {
+  margin: 5px;
+}
+#subBodyImagePoster1Ab {
+  width: 80%;
+  text-align: center;
+  background-color: rgb(244, 51, 151);
+  border-radius: 8px;
+  color: white;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+#subBodyImagePoster1Ab > img {
+  margin-right: 15px;
+}
+#topCategoriesTile {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+  margin-top: 20px;
+}
+
+#topCategoriesTile div {
+  margin: auto;
+  width: 22%;
+  height: 2px;
+  background-color: rgb(247, 168, 202);
+}
+#topCategoriesBanner {
+  width: 84%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-image: url("https://images.meesho.com/images/marketing/1649759774600.jpg");
+  margin-top: 44px;
+  margin-bottom: 64px;
+  padding: 25px;
+  border-radius: 8px;
+  /* margin: 48px 0px 60px 0px; */
+}
+#topCategoriesBanner2 {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 15px;
+}
+#topCategoriesBanner2 > div {
+  margin-left: 20px;
+}
+#subBodyImagePoster3 {
+  margin: auto;
+  margin-bottom: 60px;
+  width: 85%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  background-image: url("https://images.meesho.com/images/marketing/1664343269674.jpg");
+}
+
+#subBodyImagePoster3A {
+  margin-top: 100px;
+}
+#subBodyImagePoster3B {
+  display: flex;
+  margin: 10px;
+}
+#subBodyImagePoster4 {
+  width: 85%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  margin-bottom: 40px;
+  z-index: -1;
+}
+#subBodyImagePoster4A {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  text-align: right;
+  padding: 40px;
+}
+#subBodyImagePoster4A > span > h4 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Mier bold";
+}
+#subBodyImagePoster4A > span > h1 {
+  color: rgb(244, 51, 151);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  font-family: "Mier bold";
+}
+#subBodyImagePoster4A > span img {
+  width: 20%;
+  margin: 5px;
+}
+#subBodyImagePoster5 {
+  width: 85%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  z-index: -1;
+}
+#subBodyImagePoster5 img {
+  width: 100%;
+}
+#subBodyImagePoster5A {
+  position: absolute;
+  padding: 20px;
+}
+#subBodyImagePoster5A > span {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+#subBodyImagePoster5A > p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+#subBodyImagePoster5A > div > span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 18px;
+}
+#signUpBusiness {
+  width: 35%;
+  height: 40px;
+  background-color: aliceblue;
+  color: rgb(244, 108, 130);
+  border-radius: 4px;
+  text-align: center;
+}
+#bodyProductItems > h4 {
+  color: rgb(51, 51, 51);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 20px;
+  font-family: "Mier bold";
+  text-align: left;
+  padding: 25px 0px 5px 5px;
+}
+#bodyProductItems {
+  width: 98%;
+  margin: auto;
+  background-color: rgb(251, 247, 247);
+}
+#bodyProductItems > div {
+  display: flex;
+}
+#filterSect {
+  width: 20%;
+}
+#filterSect1Aa {
+  border: 1px solid;
+  text-align: center;
+  line-height: 2px;
+  margin-top: 8px;
+  background-color: rgb(230, 234, 234);
+}
+#filterSect select {
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px 0px 15px 0px;
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+  line-height: 24px;
+  font-weight: 600px;
+  text-align: center;
+}
+#productsSect {
+  /* border: 2px dashed navy; */
+  width: 76%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+/* footerPart From Here */
+
+#footerPart {
+  margin: auto;
+  width: 98%;
+
+  margin-top: 40px;
+}
+#footerPartA {
+  background-color: rgb(249, 249, 249);
+  margin: auto;
+
+  width: 98%;
+}
+
+#footerPartAin {
+  width: 88%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+}
+#footerPartAin p {
+  color: rgb(102, 102, 102);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Mier book";
+  margin: 0px;
+  padding: 0px;
+}
+#footerPartAin > div > img {
+  width: 45%;
+}
+#footerPartAin > div:nth-child(1) {
+  width: 30%;
+}
+#footerPartAin > div:nth-child(1) > h4 {
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 30px;
+}
+#footerPartAin > div:nth-child(2) {
+  margin-top: 30px;
+  width: 13%;
+}
+#footerPartAin > div:nth-child(3) {
+  margin-top: 30px;
+  width: 15%;
+}
+#footerPartAin > div:nth-child(4) {
+  margin-top: 30px;
+  line-height: 40px;
+  width: 13%;
+}
+#footerPartAin > div:nth-child(5) {
+  margin-top: 30px;
+  width: 25%;
+}
+#footerPartAin span {
+  color: rgb(102, 102, 102);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Mier demi";
+  margin: 0px;
+  padding: 0px;
+}
+#footerPartAin h6 {
+  color: rgb(51, 51, 51);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 5 8px;
+  font-family: "Mier bold";
+  margin: 0px;
+  padding: 0px;
+}
+#footerPartB {
+  margin-top: 20px;
+  padding: 20px 0px 20px 0px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+#footerPartBa {
+  width: 96%;
+  margin: auto;
+  display: flex;
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+  line-height: 34px;
+  justify-content: space-between;
+}
+#footerPartBab {
+  /* border: 2px dashed rgb(90, 22, 42); */
+  width: 96%;
+  margin: auto;
+}
+
+.footerItemTexth2 {
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+}
+.footerItemTextP {
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+}
+.linkContainer a {
+  color: rgb(244, 51, 151);
+}
+
+#footerLowerPSect > a {
+  color: rgb(244, 51, 151);
+  font-size: 20px;
+  margin: 5px;
+  font-weight: 600;
+}
+.linkkSection > div:nth-child(1) {
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+#topCategoriesBanner1 {
+  margin: auto;
+}
+#subBodyImagePoster4 > img {
+  width: 100%;
+}
+#subBodyImagePoster4A {
+  width: 50%;
+  height: 70%;
+  line-height: 0px;
+}
+#subBodyImagePoster4A {
+  /* text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 5px;
+  text-align: end; */
+}
+
+.card {
+  width: 90%;
+  margin-bottom: 25px;
+  /* height: 380px; */
+  /* border: 1px solid blue; */
+  padding-left: 5px;
+  line-height: 16px;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* box-shadow:inset -10px -10px 15px rgba(255, 255, 255, 0.5), 
+                inset 10px 10px 15px rgba(70, 70, 70, 0.12); */
+}
+
+/* images div */
+.picture {
+  /* border: 1px solid yellow; */
+  /* height: 200px; */
+  width: 95%;
+  margin: 0px auto 20px auto;
+}
+
+/* image */
+.card img {
+  width: 100%;
+  display: block;
+  margin: 5px auto;
+  border-radius: 18%;
+}
+
+/* rating box div */
+.ratbox {
+  /* border: 1px solid rgb(19, 19, 19); */
+  display: flex;
+  width: 27%;
+  background-color: rgb(28, 203, 119);
+  border-radius: 15px;
+  /* margin-bottom: 5px; */
+  /* padding: 2px; */
+}
+
+/* star image */
+.ratbox > img {
+  width: 30%;
+  margin-right: 120px;
+}
+
+/* rating button */
+.ratbox > button {
+  border: none;
+  width: 40px;
+  background-color: rgb(28, 203, 119);
+  color: white;
+  font-weight: bold;
+}
+
+/* product details  */
+.info > p {
+  color: gray;
+  margin: 5px 0px;
+  /* line-height: 15px; */
+}
+
+.info > h3,
+h4 {
+  color: rgb(49, 47, 47);
+  /* margin: 10px; */
+  margin: 8px 0px;
+}
+
+.info > button {
+  border: none;
+  color: gray;
+  padding: 4px;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+/* add to cart button */
+.card > button {
+  display: block;
+  margin: 10px auto 5px;
+  border: none;
+  width: 45%;
+  border-radius: 13px;
+  padding: 6px;
+  color: white;
+  background-color: #ec0e6e;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Filtering Part  */
+.sort,
+.filter,
+.filterbyprice,
+.filterbyBrand,
+.filterbyRating {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(66, 62, 62);
+  font-weight: bold;
+  /* font-size: medium; */
+  cursor: pointer;
+}
+
+.sort,
+.filter,
+.filterbyprice,
+.filterbyBrand,
+.filterbyRating > option {
+  color: rgb(102, 98, 98);
+  /* font-weight: bold; */
+  font-size: medium;
+  cursor: pointer;
+}
+
+#option > p {
+  font-family: "Raleway", sans-serif;
+  color: rgb(66, 62, 62);
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* media Queries FRom Here */
+
+@media screen and (max-width: 811px) {
+  #navRightSectionA,
+  #navRightSectionB,
+  #verticleLine {
+    display: none;
+  }
+
+  #subLowerNavBar > ul {
+    flex-direction: row;
+  }
+
+  #subBodyImagePoster1 {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #topCategoriesBanner {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #topCategoriesBanner2 {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  #subBodyImagePoster3 {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #subBodyImagePoster3B {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  #subBodyImagePoster3B {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  #subBodyImagePoster3 div {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  #filterSect {
+    /* display: none; */
+  }
+
+  #productsSect {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
+
+  #filterSect select {
+    width: 90%;
+    /* display: none; */
+    width: 100%;
+    padding: 7px;
+    font-size: 15px;
+  }
+  #bodyImagePoster {
+      width: 100%;
+  }
+        #footerPartB {
+            display: none;
+        }
+        #subBodyImagePoster4{
+          display: none;
+        }
+        #subBodyImagePoster5{
+          display: none;
+        }
+}
+
+@media screen and (max-width: 444px) {
+  #navRightSectionA,
+  #navRightSectionB,
+  #verticleLine,
+  #navRightSectionC,
+  #searchBoxDiv,
+  #subLowerNavBar {
+    display: none;
+  }
+
+  #subBodyImagePoster1Aa {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .Careers {
+    display: none;
+  }
+  #subBodyImagePoster5 {
+    display: none;
+  }
+
+  .Careers {
+    display: none;
+  }
+
+  #filterSect {
+    display: none;
+  }
+
+  #productsSect {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+  #footerPartB{
+    display: none;
+  }
+  #footerPartAin{
+   
+ flex-direction: column;
+flex-wrap: wrap;
+  }
+  #footerPartAin div{
+    width: 120%;
+  }
+}
+
+

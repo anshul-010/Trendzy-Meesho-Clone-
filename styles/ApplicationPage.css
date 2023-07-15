@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap");
+
+:root {
+    --pink: #F43397;
+    --lightPink: #F7A8CA;
+    --lighterPink: #FDE9F2;
+    --green: #038D63;
+    --lightGreen: #23BB75;
+    --lighterGreen: #91E5BD;
+    --red: #E11900;
+    --lightRed: #EE7212;
+    --green: #388e3c;
+    --orange: #F4B619;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    text-decoration: none;
+}
+
+/* nav bar css---------------- */
+#wholeNavogationBar {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    position: sticky;
+    top: 10px;
+    background-color: white;
+}
+
+#upperNavBar {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navRightSection {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navRightSection>div>a>span {
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(122, 126, 127);
+}
+
+#navRightSection>div>a>span:hover {
+    color: red;
+}
+
+#navRightSection>div>a {
+    display: flex;
+    text-decoration: none;
+}
+
+#navLeftSection {
+    width: 40%;
+    display: flex;
+}
+
+#searchBoxDiv {
+
+    display: flex;
+    width: 60%;
+    margin-left: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(133, 133, 130);
+}
+
+#searchBoxDiv>div>img {
+    width: 33px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+#searchBox {
+
+    outline: none;
+
+    border: none;
+    height: 45px;
+    width: 100%;
+    font-size: larger;
+}
+
+#verticleLine {
+    width: 2px;
+    height: 40px;
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    font-weight: 400;
+    box-sizing: border-box;
+    border-right: 2px solid rgb(223, 223, 223);
+}
+
+#navRightSectionA,
+#navRightSectionC {
+    position: relative;
+    display: inline-block;
+}
+
+#nav1dropDown1 {
+    width: 250px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    background-color: rgb(246, 249, 252);
+    box-shadow: rgb(151, 140, 140);
+    border-radius: 15px;
+}
+
+#dropDownContent1 {
+    width: 100%;
+    padding: 5px 30px 20px 20px;
+    line-height: 3;
+}
+
+#dropDownContent1 img {
+    width: 70%;
+}
+
+#navRightSectionA:hover #nav1dropDown1 {
+    display: block;
+}
+
+#dropDownContent2 {
+    width: 100%;
+    line-height: 1;
+}
+
+#dropDownContent2 h2 {
+    font-size: 18px;
+    color: rgb(61, 59, 59);
+    font-weight: "demi";
+}
+
+#dropDownContent2 p {
+
+    font-size: 12px;
+    color: rgb(47, 47, 47);
+    font-weight: "demi";
+}
+
+#dropDownContent2 button {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(244, 51, 151);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+#dropDownContent2>a>div>img {
+    width: 8%;
+}
+
+#dropDownContent2>a {
+    text-decoration: none;
+}
+
+#dropDownContent2>a>div>span {
+    font-size: 18px;
+    color: rgb(79, 75, 75);
+}
+
+#nav1dropDown2 {
+    width: 250px;
+    display: none;
+    position: absolute;
+    padding: 5px 20px 10px 20px;
+    /* z-index: 100;  */
+    background-color: rgb(246, 249, 252);
+    box-shadow: rgb(151, 140, 140);
+    border-radius: 15px;
+    left: -100px;
+}
+
+#navRightSectionC:hover #nav1dropDown2 {
+    display: block;
+}
+
+#subLowerNavBar {
+    margin: auto;
+    width: 98%;
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid; */
+
+}
+
+#subLowerNavBar>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#subLowerNavBar>ul>li>a {
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    font-style: normal;
+    line-height: 20px;
+
+}
+
+#subLowerNavBar>ul>li>a:hover {
+    color: rgb(244, 51, 151);
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+#subLowerNavBar>ul>li:hover {
+    border-bottom: 2px solid rgb(244, 51, 151);
+}
+
+.dropDownDivItems {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.dropDownDiv {
+    width: 98%;
+    margin: auto;
+    margin-top: 2px;
+    right: 0%;
+    left: 0%;
+    transition: 0.5s;
+    position: absolute;
+    display: none;
+    background-color: rgb(254, 248, 248);
+    border: 1px solid rgb(160, 158, 158);
+}
+
+#subLowerNavBar>ul>li:hover .dropDownDiv {
+    display: block;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dropDownDivItems>div>h4 {
+    font-size: 20px;
+    color: rgb(244, 51, 151);
+    font-weight: 600;
+    line-height: 20px;
+    font-family: "Mier demi";
+}
+
+.dropDownDivItems>div>ul>li>a {
+    font-size: 17px;
+    color: rgb(102, 102, 102);
+    font-weight: 450;
+    line-height: 33px;
+}
+#subBodyImagePoster{
+width: 98%;
+margin: auto;
+margin-top: 40px;
+
+}
+#subBodyImagePoster1{
+width: 80%;
+margin: auto;
+display: flex;
+align-items: center;
+}
+#subBodyImagePoster1A{
+margin: 20px;
+padding: 10px;
+background-color: rgb(249,249,249);
+}
+#subBodyImagePoster1Aa{
+display: flex;
+border: 1px dashed yellow;
+}
+#subBodyImagePoster1Aa > div{
+margin: 5px;
+}
+#subBodyImagePoster1Ab{
+width: 80%;
+text-align: center;
+background-color: rgb(244,51,151);
+border-radius: 8px;
+color: white;
+padding-bottom: 8px;
+padding-top: 5px;
+margin-top: 18px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+hr{
+    width: 100%;
+    border: 1px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* container css */
+#container1{
+width: 700px;
+margin: auto;
+text-align: center;
+margin-top: 220px;
+}
+#container1>div{
+width: 350px;
+margin: auto;
+}
+#container1 span{
+width: 350px;
+line-height: 55px;
+font-size: larger;
+font-size: 25px;
+font-weight: 600;
+}
+#container1 button{
+width: 350px;
+margin-top: 35px;
+padding: 15px;
+font-size: 25px;
+border: none;
+background-color: #F43397;
+color: white;
+border-radius: 5px;
+font-weight: 600;
+}
+#container1 button:active{
+background-color: #b52770;
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 650px) {
+    #lowerNavBar,#navRightSection,#searchBoxDiv {
+        display: none;
+    }
+    hr:last-child{
+        display: none;
+    }
+
+    #container1,#entireBody {
+        border: red solid 1px;
+        width: 100%;
+        margin-top: 105px;
+      
+    }
+        #container1 button{
+        border: red solid 1px;
+    width: 70%;
+}
+}

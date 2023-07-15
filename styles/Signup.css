@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap");
+* {
+  font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fde9f2;
+}
+/* nav bar css------------------- */
+#upperNavBar {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#navRightSection {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navRightSection>div>a>span {
+  font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(122, 126, 127);
+}
+
+#navRightSection>div>a>span:hover {
+  color: red;
+}
+
+#navRightSection>div>a {
+  display: flex;
+  text-decoration: none;
+}
+
+#navLeftSection {
+  width: 40%;
+  display: flex;
+}
+
+#searchBoxDiv {
+
+  display: flex;
+  width: 60%;
+  margin-left: 5px;
+  border-radius: 3px;
+  border: 1px solid rgb(133, 133, 130);
+}
+
+#searchBoxDiv>div>img {
+  width: 33px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 8px;
+}
+
+#searchBox {
+
+  outline: none;
+
+  border: none;
+  height: 45px;
+  width: 100%;
+  font-size: larger;
+}
+
+#verticleLine {
+  width: 2px;
+  height: 40px;
+  font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+  border-right: 2px solid rgb(223, 223, 223);
+}
+#navRightSection{
+  padding-right: 15px;
+}
+#navRightSectionA,
+#navRightSectionC {
+  position: relative;
+  display: inline-block;
+}
+
+#nav1dropDown1 {
+  width: 250px;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: rgb(246, 249, 252);
+  box-shadow: rgb(151, 140, 140);
+  border-radius: 15px;
+}
+
+#dropDownContent1 {
+  width: 100%;
+  padding: 5px 30px 20px 20px;
+  line-height: 3;
+}
+
+#dropDownContent1 img {
+  width: 70%;
+}
+
+#navRightSectionA:hover #nav1dropDown1 {
+  display: block;
+}
+
+#dropDownContent2 {
+  width: 100%;
+  line-height: 1;
+}
+
+#dropDownContent2 h2 {
+  font-size: 18px;
+  color: rgb(61, 59, 59);
+  font-weight: "demi";
+}
+
+#dropDownContent2 p {
+
+  font-size: 12px;
+  color: rgb(47, 47, 47);
+  font-weight: "demi";
+}
+
+#dropDownContent2 button {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(244, 51, 151);
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+#dropDownContent2>a>div>img {
+  width: 8%;
+}
+
+#dropDownContent2>a {
+  text-decoration: none;
+}
+
+#dropDownContent2>a>div>span {
+  font-size: 18px;
+  color: rgb(79, 75, 75);
+}
+
+#nav1dropDown2 {
+  width: 250px;
+  display: none;
+  position: absolute;
+  padding: 5px 20px 10px 20px;
+  /* z-index: 100;  */
+  background-color: rgb(246, 249, 252);
+  box-shadow: rgb(151, 140, 140);
+  border-radius: 15px;
+  left: -100px;
+}
+
+#navRightSectionC:hover #nav1dropDown2 {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+/* signup css----------- */
+#container {
+  width: 430px;
+  height: 710px;
+  margin: auto;
+  margin-top: 100px;
+  bottom: 100px;
+  margin-bottom: 100px;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: white;
+}
+#signUpImage > img {
+  width: 100%;
+  border-radius: 9px 9px 0 0;
+}
+#signUpDiv {
+  width: 100%;
+  height: 465px;
+}
+#signUpContent {
+  width: 100%;
+  height: 80%;
+  padding:10px 45px;
+}
+#signUpContent div {
+  width: 100%;
+  height: 20%;
+}
+#signUpContent>div:nth-child(1)>h4 {
+  margin-top: -15px;
+  position: relative;
+  top: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #f43397;;
+}
+h4{
+  
+  visibility: hidden;
+}
+
+#signUpContent>div:nth-child(1)>h3 {
+  font-size: larger;
+  font-weight: 800;
+}
+/* #signUpContent>div:nth-child(2)>input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: large;
+  margin-top:15px ;
+  border-bottom: 2px solid grey;
+} */
+#numberIp {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: large;
+  margin-top:15px ;
+  border-bottom: 2px solid grey;
+}
+#signUpContent>div:nth-child(2)>input:focus {
+border-bottom: 2px #f43397 solid;
+transition: border-bottom 0.6s;
+
+}
+#signUpContent>div:nth-child(3)>button {
+  width: 100%;
+  background-color: #f43397;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  height: 49px;
+  font-size: larger;
+  font-weight: 500;
+  margin-top: 12px;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.button2 {
+  width: 100%;
+  background-color: #f43397;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  height: 49px;
+  font-size: larger;
+  font-weight: 500;
+  margin-top: 12px;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+/* .buttonChange{
+    margin-top: 25px;
+    background-color: black;
+} */
+#signUpContent>div:nth-child(3)>button:active {
+  width: 100%;
+  background-color: #ca2a7d;
+transition: background-color 0.4s;
+}
+
+#termsConditions {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  line-height: 2px;
+  font-size: small;
+  font-weight: 600;
+}
+
+p {
+  color: grey;
+  position: relative;
+  top: 10px;
+}
+span {
+  color: #f43397;
+}
+.otpIp{
+  display: inline;
+  width: 14%;
+height: 40px;
+  border: none;
+  outline: none;
+  font-size: large;
+  margin-top: 15px;
+  border-bottom: 2px solid grey;
+/* border: solid 1px red; */
+margin-left: 4.5px;
+background-color:#fff7fb;
+text-align: center;
+font-size: 25px;
+
+}
+
+.addGreen{
+  color: #038D63;
+}
+.addRed{
+  color: #E11900;
+}
+.visibility {
+  visibility: visible ;
+}
+
+/* media queries */
+@media screen and (max-width: 450px) {
+  #container {
+    width: 90%;
+  }
+
+  #navRightSection {
+display: none;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  #priceContainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  #debitCardInput {
+    border: none;
+    margin: auto;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
